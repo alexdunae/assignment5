@@ -1,0 +1,14 @@
+<h1><%= @animal.name %></h1>
+
+<ul>
+ <li> Scientific Name: <%= @animal.name %></li>
+ <li> CommonName <%= @animal.common_names[0].name %></li>
+ <li> Scientific Name <%= @animal.name %></li>
+ <li><%= @animal.recent? %></li>
+ <li><%= link_to("URL",@animal.url)%></li>
+ <%= image_tag(@animal.image_url) %>
+</ul>
+
+<p><%= link_to("Back to the list of Animals", classifications_path)%></p>
+
+<%= @animal.inspect %>
