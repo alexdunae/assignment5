@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
   get 'animals/show'
 
-  resources :classifications, :animals
+  resources :classifications do 
+    resources :animals 
+  end
   root "classifications#index"
 
   # The priority is based upon order of creation: first created -> highest priority.

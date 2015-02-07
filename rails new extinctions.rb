@@ -11,5 +11,5 @@ bin/rake db:seed
 
 bin/rails console
 
-bin/rails generate controller Classifications name:string
+bin/rails generate controller Classifications index show
 
